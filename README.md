@@ -47,3 +47,8 @@ Se prueba el metodo de exclusion, en este caso, la condicion es si la id=3, se c
 
 <img width="637" height="125" alt="10" src="https://github.com/user-attachments/assets/7de603d6-cd83-4aad-a920-a87c2e3df4ce" />
 
+Se realiza annotate para realizar operaciones de agregacion para sacar el promedio del monto en cada cuenta:
+
+<img width="680" height="214" alt="image" src="https://github.com/user-attachments/assets/fd369131-4fb3-4399-b929-6a8e452297b0" />
+
+
