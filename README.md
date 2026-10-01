@@ -6,24 +6,44 @@ Los html estan bajo la jerarquia de base.html, que es el template que manda en l
 
 ## Consultas SQL
 Se procede a realizar consultas sql para probar el funcionamiento de los modelos:
+
 Se crean 3 entradas de clientes:
+
 <img width="921" height="173" alt="1" src="https://github.com/user-attachments/assets/c72b3ed8-248a-4bf3-9945-ab96741356e7" />
+
 se asocian los clientes a distintas cuentas, demostrando que la relacion creada en las tablas no causa errores al ingresar los datos:
+
 <img width="662" height="53" alt="2" src="https://github.com/user-attachments/assets/3546b8b8-ffcd-4607-b5f3-0d3eb21e55fb" />
+
 se crean registros de transacciones asociados a las cuentas:
+
 <img width="836" height="161" alt="3" src="https://github.com/user-attachments/assets/08c01f8f-e08d-4e43-a072-f788c3b527f2" />
+
 Se usa el orm para buscar todos los clientes registrados y se muestran 3 atributos:
+
 <img width="914" height="230" alt="4" src="https://github.com/user-attachments/assets/83a4afc3-c4b1-4c61-ab1a-7401d36e6251" />
+
 Se prueba actualizar un registro de una transaccion y se muestra en pantalla el exito del cambio:
+
 <img width="476" height="183" alt="5" src="https://github.com/user-attachments/assets/24fbb2b3-08d7-4c90-97a4-528bcf56748a" />
+
 Ahora se prueba la eliminacion de un registro de forma exitosa:
+
 <img width="470" height="154" alt="6" src="https://github.com/user-attachments/assets/d82f9334-93c7-40fc-905c-9736e9ecf55f" />
+
 Consultas realizadas con SQL utilizando de forma segura usando parametros:
+
 <img width="891" height="110" alt="7" src="https://github.com/user-attachments/assets/f4811044-61d3-4244-95cc-3093eccc080f" />
+
 Uso de connection para realizar una consulta de agregacion, en este caso, suma:
+
 <img width="578" height="146" alt="8" src="https://github.com/user-attachments/assets/a786745f-4bf9-4860-8552-40ef7e3402bd" />
+
 Se utiliza filtros en orm para obtener resultados basados en 2 condiciones:
+
 <img width="538" height="90" alt="9" src="https://github.com/user-attachments/assets/16416d16-0a28-4d71-87fe-5ee7192b2350" />
+
 Se prueba el metodo de exclusion, en este caso, la condicion es si la id=3, se cumple la condicion y se muestra el resultado con el registro omitido:
+
 <img width="637" height="125" alt="10" src="https://github.com/user-attachments/assets/7de603d6-cd83-4aad-a920-a87c2e3df4ce" />
 
