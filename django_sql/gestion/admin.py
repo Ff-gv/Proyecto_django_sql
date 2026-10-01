@@ -40,7 +40,7 @@ class TransaccionAdmin(admin.ModelAdmin):
 @admin.register(Promocion)
 class PromocionAdmin(admin.ModelAdmin):    
     list_display = (
-        'nombre',
+        'id',
         'descuento'
     )
 @admin.register(Descripcion)

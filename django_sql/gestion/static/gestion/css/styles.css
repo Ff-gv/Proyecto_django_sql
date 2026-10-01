@@ -1,0 +1,56 @@
+body {
+    background-color: #f4f7fb;
+    color: #243247;
+}
+
+main,
+section.container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+h1 {
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.card,
+.table-responsive,
+form {
+    background-color: #fff;
+    border-radius: 0.75rem;
+}
+
+.table {
+    margin-bottom: 0;
+}
+
+.btn {
+    border-radius: 0.5rem;
+}
+
+form {
+    max-width: 700px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 12px rgba(25, 45, 75, 0.08);
+}
+
+section {
+    min-height: calc(100vh - 56px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.login-section .login-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.login-section form {
+    width: min(100%, 26rem);
+}

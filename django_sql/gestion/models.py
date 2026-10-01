@@ -2,12 +2,7 @@ from django.db import models
 
 
 # Create your models here.
-class Promocion(models.Model):
-    nombre = models.CharField(max_length=100)
-    descuento = models.IntegerField()
 
-    def __str__(self):
-        return self.nombre
     
 class Cliente(models.Model):
     nombre = models.CharField(max_length=60)
@@ -16,10 +11,16 @@ class Cliente(models.Model):
     telefono_celular = models.CharField(max_length=35,blank=True,null=True)
     direccion = models.CharField(max_length=200)
     fecha_inscripcion = models.DateField(auto_now_add=True)
-    promocion = models.ManyToManyField(Promocion, blank=True, related_name='clientes')
+    
     def __str__(self):
         return f'{self.nombre}-{self.apellido}'
     
+class Promocion(models.Model):
+    cliente = models.ManyToManyField(Cliente, blank=True, related_name='promociones')
+    descuento = models.IntegerField()
+
+    def __str__(self):
+        return f'Promocion con descuento {self.descuento}'
 class Descripcion(models.Model):
     TIPO_CHOICES = [
         ('NEGRO','negro'),
